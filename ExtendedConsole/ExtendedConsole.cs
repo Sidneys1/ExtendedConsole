@@ -50,10 +50,7 @@ namespace ExtendedConsole {
         /// Clears an area of the console buffer
         /// </summary>
         public static void ClearConsoleArea(short x, short y, short w, short h, CharInfo? character = null) {
-            var defChar = character ?? new CharInfo {
-                CharUnion = new CharUnion { UnicodeChar = ' ' },
-                Attributes = (short)((short)Console.ForegroundColor | (short)((short)Console.BackgroundColor << 8))
-            };
+            var defChar = character ?? new CharInfo (foregroundColor:Console.ForegroundColor, backgroundColor:Console.BackgroundColor);
 
             var r = new CharInfo[w * h].SetAllValues(defChar);
 
@@ -73,10 +70,7 @@ namespace ExtendedConsole {
         /// Clears a single horizontal row of the console buffer
         /// </summary>
         public static void ClearConsoleLine(short line, CharInfo? character = null) {
-            var defChar = character ?? new CharInfo {
-                CharUnion = new CharUnion { UnicodeChar = ' ' },
-                Attributes = (short)((short)Console.ForegroundColor | (short)((short)Console.BackgroundColor << 8))
-            };
+            var defChar = character ?? new CharInfo(foregroundColor:Console.ForegroundColor, backgroundColor:Console.BackgroundColor);
 
             var r = new CharInfo[Console.BufferWidth].SetAllValues(defChar);
 

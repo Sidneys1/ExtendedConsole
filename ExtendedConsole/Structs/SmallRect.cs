@@ -24,5 +24,11 @@ namespace ExtendedConsole.Structs
         public int Height => Bottom - Top;
 
         public int Area => Width*Height;
+
+        public bool Intersects(SmallRect comp) => comp.Top <= Bottom && comp.Bottom >= Top && comp.Left >= Right && comp.Right <= Left;
+
+        
+
+        public static SmallRect operator +(SmallRect left, Coord right) => new SmallRect((short) (left.Left+right.X), (short) (left.Top+right.Y), (short) (left.Right+right.X), (short) (left.Bottom+right.Y));
     }
 }
