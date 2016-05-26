@@ -57,5 +57,20 @@ namespace ExtendedConsole {
             SafeFileHandle hConsoleOutput,
             ref ConsoleScreenBufferInfoEx consoleScreenBufferInfo
             );
+
+        [DllImport("Kernel32.dll", SetLastError = true)]
+        internal static extern SafeFileHandle CreateConsoleScreenBuffer(
+            uint dwDesiredAccess,
+            uint dwShareMode,
+            IntPtr secutiryAttributes,
+            uint flags,
+            [MarshalAs(UnmanagedType.U4)] uint screenBufferData
+        );
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        internal static extern bool SetConsoleActiveScreenBuffer(SafeFileHandle hConsoleOutput);
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        internal static extern SafeFileHandle GetStdHandle(StdStreamHandle nStdHandle);
     }
 }

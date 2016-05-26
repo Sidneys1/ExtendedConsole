@@ -65,6 +65,7 @@
     <Compile Include="Structs\MenuEventRecord.cs" />
     <Compile Include="Structs\MouseEventRecord.cs" />
     <Compile Include="Structs\SmallRect.cs" />
+    <Compile Include="Structs\StdStreamHandle.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
