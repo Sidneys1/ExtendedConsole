@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.25920.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedConsole", "ExtendedConsole\ExtendedConsole.csproj", "{848F2B55-5518-4DBB-B574-2FE4824F15AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{E2BA9404-87B8-4B7E-8CA8-A2D92C6EED1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{848F2B55-5518-4DBB-B574-2FE4824F15AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{848F2B55-5518-4DBB-B574-2FE4824F15AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{848F2B55-5518-4DBB-B574-2FE4824F15AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2BA9404-87B8-4B7E-8CA8-A2D92C6EED1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2BA9404-87B8-4B7E-8CA8-A2D92C6EED1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2BA9404-87B8-4B7E-8CA8-A2D92C6EED1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2BA9404-87B8-4B7E-8CA8-A2D92C6EED1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
